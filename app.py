@@ -24,8 +24,8 @@ if st.button('Predict'):
         result = predict_email(email_text)
         
         if result == 'Spam':
-            st.markdown(f"<h2 style='color: red;'>🚨 The email is: <strong>{result}</strong></h2>", unsafe_allow_html=True)
+            st.markdown(f"<h2 style='color: red;'>🚨 The SMS is: <strong>{result}</strong></h2>", unsafe_allow_html=True)
         else:
-            st.markdown(f"<h2 style='color: green;'>✅ The email is: <strong>{result}</strong></h2>", unsafe_allow_html=True)
+            st.markdown(f"<h2 style='color: green;'>✅ The SMS is: <strong>{result}</strong></h2>", unsafe_allow_html=True)
     else:
         st.warning('Please enter some text to analyze.')
